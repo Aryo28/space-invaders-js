@@ -1,0 +1,67 @@
+<style>
+  body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 30px;
+  }
+
+</style>
+
+<div style="position: relative">
+  <p
+    style="
+      position: absolute;
+      z-index: 10;
+      color: white;
+      left: 10px;
+      top: 10px;
+      margin: 0;
+      font-family: sans-serif;
+      font-size: 14px;
+    "
+  >
+    <span>Score:</span> <span id="score">0</span>
+  </p>
+  <div
+    style="
+      position: absolute;
+      color: white;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    "
+    id="endScreen"
+  ></div>
+  <button
+    style="
+      position: absolute;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      top: 340px;
+      bottom: 180px;
+      left: 370px;
+      right: 380px;
+      background-color: #a3a3a3;
+      border: 1px solid white;
+      color: white;
+      font-family: 'Press Start 2P', cursive;
+      font-size: 20px;
+    "
+    id="reload"
+    onclick="window.location.reload(true);"
+  >
+    PLAY AGAIN
+  </button>
+  <canvas></canvas>
+</div>
+
+<script src="index.js"></script>
